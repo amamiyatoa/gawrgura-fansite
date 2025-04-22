@@ -1,0 +1,150 @@
+/*
+    当サイトが使用している画像はすべて制作者の著作物であり、権利は著作者に帰属いたします。
+    当サイトの権利は制作者の私にありますが、著作権はHololive Productionに帰属いたします。
+    そして当サイトの利用によって発生した損害に対して、制作者並びに当該関係者は一切の責任を負わないものとします。
+    ご了承くださいますようよろしくお願いいたします。
+    ©2025 @toa3_ine(TwitterID)
+*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #82aeff;
+    /*#82aeff*/
+}
+
+/*横幅1024px以上のみ以下適応*/
+@media screen and (min-width: 1024px) {
+    .headerWrapper {
+        background-color: white;
+    }
+    .logoInnerObj {
+        margin: 0 auto;
+        width: fit-content;
+        height: 20vh;
+    }
+    .logoInnerObj img {
+        height: 20vh;
+        object-fit: cover;
+    }
+    .navi {
+        display: flex;
+    }
+    .navigateWrapper {
+        display: flex;
+        width: 100%;
+    }
+    #menuListManager {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 100%;
+        background-color: rgba(0, 204, 255,0.3);
+    }
+    .menuList {
+        list-style-type: none;
+        display: inline-block;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .menuList a {
+        text-decoration: none;
+        color: #000;
+    }
+    ul#menuListManager ul#menuBox {
+        width: 175px;
+        visibility: hidden;
+        opacity: 0;
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        list-style-type: none;
+        background-color: rgba(0, 204, 255,1);
+    }
+    /*
+        liタグにmenuListクラスが付いていてかつホバーされた時に付与するクラス定義
+    */
+    ul#menuListManager li.menuList:hover ul#menuBox {
+        visibility: visible;
+        opacity: 1;
+        transition: 0.1s ease-in-out;
+    }
+    /*
+        mainタグ以降
+    */
+    .mainContentWrapper {
+        width: 80vw;
+        height: 55vh;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: 1px solid #000;
+    }
+    .whatIsThis {
+        display: table;
+        width: 100%;
+        height: 100%;
+    }
+    .warning {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        -webkit-text-stroke: #000 2px;
+        paint-order: stroke;
+    }
+
+    /*
+        Gawr Gura's Information
+    */
+    .information {
+        margin-top: 200px;
+        p.catch {
+            font-size: 20px;
+            font-weight: bold;
+            color: #063f5c;
+        }
+        h1 {
+            border-bottom: solid 1px black;
+        }
+    }
+    .graphs {
+        display: flex;
+        li {
+            list-style-type: none;
+        }
+        img.wholeBodyIMG {
+            width: 300px;
+            margin-left: 250px;
+        }
+    }
+    .ggiList {
+        margin: 50px 0px 0px 100px;
+        border: 1px solid #000;
+        width: max-content;
+    }
+    .ggiList li {
+        padding: 10px 150px 10px 20px;
+        border-bottom: 1px solid #000;
+    }
+    .ggiListContent {
+        margin: 50px 0px 0px 0px;
+        border: 1px solid #000;
+        border-left: none;
+        width: max-content;
+        li {
+            padding: 10px 20px 10px 20px;
+            border-bottom: 1px solid #000;
+            a {
+                color: #000;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 481px) {
+
+}
