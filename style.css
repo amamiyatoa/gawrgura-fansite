@@ -15,7 +15,10 @@ body {
     background-color: #82aeff;
     /*#82aeff*/
 }
-
+img {
+    pointer-events: none;
+    user-select: none;
+}
 /*横幅1024px以上のみ以下適応*/
 @media screen and (min-width: 1024px) {
     .headerWrapper {
