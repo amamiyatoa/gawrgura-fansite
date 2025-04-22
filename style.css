@@ -3,12 +3,13 @@
     当サイトの権利は制作者の私にありますが、著作権はHololive Productionに帰属いたします。
     そして当サイトの利用によって発生した損害に対して、制作者並びに当該関係者は一切の責任を負わないものとします。
     ご了承くださいますようよろしくお願いいたします。
-    ©2025 @toa3_ine(TwitterID).
+    ©2025 @toa3_ine(TwitterID)
 */
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {
@@ -78,17 +79,19 @@ img {
     /*
         mainタグ以降
     */
+    main {
+        height: fit-content;
+    }
     .mainContentWrapper {
         width: 80vw;
-        height: 55vh;
         margin: 0 auto;
         margin-top: 50px;
-        border: 1px solid #000;
     }
     .whatIsThis {
         display: table;
         width: 100%;
-        height: 100%;
+        height: 55vh;
+        border: 1px solid #000;
     }
     .warning {
         display: table-cell;
@@ -105,14 +108,6 @@ img {
     */
     .information {
         margin-top: 200px;
-        p.catch {
-            font-size: 20px;
-            font-weight: bold;
-            color: #063f5c;
-        }
-        h1 {
-            border-bottom: solid 1px black;
-        }
     }
     .graphs {
         display: flex;
@@ -120,7 +115,7 @@ img {
             list-style-type: none;
         }
         img.wholeBodyIMG {
-            width: 300px;
+            width: 240px;
             margin-left: 250px;
         }
     }
@@ -144,6 +139,42 @@ img {
             a {
                 color: #000;
             }
+        }
+    }
+    .textArea {
+        width: 34vw;
+        margin: 0 auto;
+        margin-top: 50px;
+        p.catch {
+            font-size: 20px;
+            font-weight: bold;
+            color: #063f5c;
+            margin-bottom: 20px;
+        }
+        p.txt {
+            font-size: 18px;
+            font-weight: bold;
+            color: #063f5c;
+        }
+        h1 {
+            border-bottom: solid 1px black;
+        }
+    }
+    .footerFontSet {
+        font-size: smaller;
+        text-align: center;
+    }
+    .recommendedVideos {
+        p.rvText {
+            span.bigText {
+                font-size: 60px;
+                font-weight: bolder;
+            }
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.45);
+            width: 95vw;
+            border-radius: 0px 50px 50px 0px;
+            padding-left: 150px;
         }
     }
 }
