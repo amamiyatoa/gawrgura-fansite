@@ -180,10 +180,15 @@ img {
         div.pickupVideos {
             display: flex;
             margin: 0 auto;
+            margin-left: 200px;
+            margin-top: 50px;
 
             div.videoBoxSettings {
                 width: 300px;
                 height: auto;
+                img {
+                    width: 300px;
+                }
             }
         }
     }
