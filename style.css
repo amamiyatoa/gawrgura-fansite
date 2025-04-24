@@ -108,6 +108,7 @@ img {
     */
     .information {
         margin-top: 200px;
+        margin-bottom: 200px;
     }
     .graphs {
         display: flex;
@@ -175,6 +176,14 @@ img {
             width: 95vw;
             border-radius: 0px 50px 50px 0px;
             padding-left: 150px;
+        }
+        div.pickupVideos {
+            display: flex;
+            margin: 0 auto;
+
+            div.videoBoxSettings {
+                width: 300px;
+            }
         }
     }
 }
