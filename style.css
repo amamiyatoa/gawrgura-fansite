@@ -183,6 +183,7 @@ img {
 
             div.videoBoxSettings {
                 width: 300px;
+                height: auto;
             }
         }
     }
