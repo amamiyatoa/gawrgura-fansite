@@ -165,7 +165,7 @@ img {
         font-size: smaller;
         text-align: center;
     }
-    .recommendedVideos {
+    #recommendedVideos {
         p.rvText {
             span.bigText {
                 font-size: 60px;
