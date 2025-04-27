@@ -161,10 +161,6 @@ img {
             border-bottom: solid 1px black;
         }
     }
-    .footerFontSet {
-        font-size: smaller;
-        text-align: center;
-    }
     #recommendedVideos {
         p.rvText {
             span.bigText {
@@ -180,8 +176,11 @@ img {
         div.pickupVideos {
             display: flex;
             margin: 0 auto;
-            margin-left: 200px;
+            margin-left: 8%;
+            margin-right: 8%;
             margin-top: 50px;
+            overflow-x: auto;
+            overflow-y: none;
 
             div.videoBoxSettings {
                 width: 300px;
@@ -189,11 +188,25 @@ img {
                 padding: 10px 10px 10px 10px;
                 background-color: white;
                 border-radius: 10px;
+                margin-right: 10px;
                 img {
                     width: 280px;
                 }
             }
         }
+    }
+    .introAuthor {
+        .introAuthorWrapper {
+            .whereAreYou {
+                
+            }
+        }
+    }
+
+
+    .footerFontSet {
+        font-size: smaller;
+        text-align: center;
     }
 }
 
