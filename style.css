@@ -124,9 +124,8 @@ img {
         Gawr Gura's Information
     */
     .information {
-        margin-top: 200px;
-        margin-bottom: 200px;
-        margin: 0px;
+        margin-top: 10%;
+        margin-bottom: 10%;
         p.ggiText {
             span.bigText {
                 font-size: 60px;
@@ -141,6 +140,7 @@ img {
     }
     .graphs {
         display: flex;
+        margin-left: 13%;
         li {
             list-style-type: none;
         }
