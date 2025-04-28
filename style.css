@@ -12,8 +12,12 @@
     user-select: none;
 }
 
+:root {
+    --new-theme-color: rgba(130,175,255,0.55);
+}
+
 body {
-    background-color: #82aeff;
+    background-color: var(--new-theme-color);
     /*#82aeff*/
 }
 img {
@@ -197,16 +201,42 @@ img {
     }
     .introAuthor {
         .introAuthorWrapper {
-            .whereAreYou {
-                
+            margin-top: 50px;
+            p.about {
+                span.bigText {
+                    font-size: 60px;
+                    font-weight: bolder;
+                }
+                font-size: 20px;
+                background-color: rgba(255, 255, 255, 0.55);
+                width: 95vw;
+                border-radius: 0px 50px 50px 0px;
+                padding-left: 150px;
+            }
+            .textAreas {
+                margin-top: 50px;
+                margin-left: 8%;
+                h2.producer {
+                    img {
+                        width: 175px;
+                    }
+                }
             }
         }
     }
 
 
     .footerFontSet {
-        font-size: smaller;
+        display: flex;
+        height: 100px;
+        margin-top: 25px;
+        align-items: center;
+        font-size: larger;
         text-align: center;
+        border-top: 2px solid;
+        small {
+            margin: 0 auto;
+        }
     }
 }
 
