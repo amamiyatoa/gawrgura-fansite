@@ -47,38 +47,51 @@ img {
     }
     #menuListManager {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         margin: 0 auto;
         width: 100%;
-        background-color: rgba(0, 204, 255,0.3);
+        background-color: #b2f0ff;
     }
     .menuList {
         list-style-type: none;
         display: inline-block;
         font-weight: bold;
         font-size: 20px;
+        width: 350px;
+        text-align: center;
+        border-radius: 15px;
     }
     .menuList a {
         text-decoration: none;
         color: #000;
     }
     ul#menuListManager ul#menuBox {
-        width: 175px;
+        width: 350px;
         visibility: hidden;
         opacity: 0;
         padding: 0px;
-        margin: 0px;
+        margin: 0 auto;
         position: absolute;
         list-style-type: none;
-        background-color: rgba(0, 204, 255,1);
+        background-color: #b2f0ff;
+        border-radius: 15px;
     }
     /*
         liタグにmenuListクラスが付いていてかつホバーされた時に付与するクラス定義
     */
-    ul#menuListManager li.menuList:hover ul#menuBox {
-        visibility: visible;
-        opacity: 1;
+    ul#menuListManager li.menuList:hover {
+        background-color: rgba(0, 204, 255,1);
         transition: 0.1s ease-in-out;
+        ul#menuBox {
+            visibility: visible;
+            opacity: 1;
+            transition: 0.1s ease-in-out;
+            :hover {
+                background-color: rgba(0,204,255,1);
+                transition: 0.1s ease-in-out;
+                border-radius: 15px;
+            }
+        }
     }
     /*
         mainタグ以降
@@ -113,6 +126,18 @@ img {
     .information {
         margin-top: 200px;
         margin-bottom: 200px;
+        margin: 0px;
+        p.ggiText {
+            span.bigText {
+                font-size: 60px;
+                font-weight: bolder;
+            }
+            font-size: 20px;
+            background-color: rgba(255, 255, 255, 0.45);
+            width: 95vw;
+            border-radius: 0px 50px 50px 0px;
+            padding-left: 150px;
+        }
     }
     .graphs {
         display: flex;
