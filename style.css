@@ -376,7 +376,7 @@ img {
     }
     .logoInnerObj img {
         width: 100%;
-        height: inherit;
+        height: 100%;
         object-fit: cover;
     }
     .navi {
@@ -398,7 +398,7 @@ img {
         display: inline-block;
         font-weight: bold;
         font-size: 20px;
-        width: 145px;
+        width: 130px;
         text-align: center;
         border-radius: 15px;
     }
@@ -407,7 +407,7 @@ img {
         color: #000;
     }
     ul#menuListManager ul#menuBox {
-        width: 145px;
+        width: 130px;
         visibility: hidden;
         opacity: 0;
         padding: 0px;
