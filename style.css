@@ -371,12 +371,12 @@ img {
     }
     .logoInnerObj {
         margin: 0 auto;
-        width: 430px;
+        width: 100%;
         height: 10vh;
     }
     .logoInnerObj img {
         width: 100%;
-        height: 10vh;
+        height: inherit;
         object-fit: cover;
     }
     .navi {
